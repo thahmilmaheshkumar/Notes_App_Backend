@@ -35,6 +35,6 @@ app.use("/api/data/", note_router);
 // app.use(error);
 connectDB();
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
-});
+// app.listen(process.env.PORT, () => {
+//   console.log(`Server is running on port ${process.env.PORT}`);
+// });
