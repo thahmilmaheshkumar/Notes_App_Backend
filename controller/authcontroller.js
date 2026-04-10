@@ -81,11 +81,13 @@ export const getUserDetails = async (req, res) => {
 };
 
 export const logout = async (req, res) => {
-  res.clearCookie("token", {
+  const option = {
+    expiresIn: new Date(Date.now()),
     httpOnly: true,
-    secure: true,
     sameSite: "none",
-  });
+    secure: true,
+  };
+  res.cookie("tooken", null, option);
   res.status(200).json({ success: true, message: "logout Success" });
 };
 
