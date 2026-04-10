@@ -17,6 +17,6 @@ export const auth = async (req, res, next) => {
   } catch (error) {
     return res
       .status(401)
-      .json({ success: false, message: "Please login to access" });
+      .json({ success: false, message: "Please login to access jsncjh" });
   }
 };
