@@ -33,7 +33,7 @@ app.use(cookieparser());
 app.use("/api/auth/", router);
 app.use("/api/data/", note_router);
 // app.use(error);
-connectDB();
+await connectDB();
 
 export default app;
 
