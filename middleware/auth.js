@@ -11,7 +11,7 @@ export const auth = async (req, resizeBy, next) => {
         .json({ success: false, message: "Please login to access" });
     }
 
-    const decode = await jwt.verify(token, process.env.JWT_SECRET);
+    const decode = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decode.id;
     next();
   } catch (error) {
