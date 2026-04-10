@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import errorhandler from "../helper/errorhandler.js";
 
-export const auth = async (req, resizeBy, next) => {
+export const auth = async (req, res, next) => {
   try {
     const token = await req.cookies.token;
 
