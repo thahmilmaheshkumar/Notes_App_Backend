@@ -16,7 +16,7 @@ const app = express();
 //middleware
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://notes-app-frontend-zeta-puce.vercel.app",
     credentials: true,
   }),
 );
