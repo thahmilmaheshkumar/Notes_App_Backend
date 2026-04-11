@@ -82,7 +82,7 @@ export const getUserDetails = async (req, res) => {
 
 export const logout = async (req, res) => {
   const option = {
-    expiresIn: new Date(Date.now()),
+    expires: new Date(Date.now()),
     httpOnly: true,
     sameSite: "none",
     secure: true,
