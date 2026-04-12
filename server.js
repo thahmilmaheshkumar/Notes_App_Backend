@@ -34,6 +34,7 @@ app.use("/api/auth/", router);
 app.use("/api/data/", note_router);
 // app.use(error);
 await connectDB();
+console.log("hai");
 
 export default app;
 
